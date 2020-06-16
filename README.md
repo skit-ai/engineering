@@ -1,4 +1,4 @@
-# ml @ vernacular.ai
+# eng @ vernacular.ai
 
 This is source for the [Engineering team webpage]() at
 Vernacular.ai. Template is [gatsby starter minimal
