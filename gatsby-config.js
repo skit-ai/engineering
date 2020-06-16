@@ -3,11 +3,12 @@ require(`dotenv`).config({
 });
 
 module.exports = {
+  pathPrefix: `/ml`,
   siteMetadata: {
     siteTitle: `Engineering at Vernacular.ai`,
     siteTitleAlt: `Engineering | Vernacular.ai`,
     siteHeadline: `Engineering | Vernacular.ai`,
-    siteUrl: `https://vernacular-ai.github.io/`,
+    siteUrl: `https://vernacular-ai.github.io/ml`,
     siteDescription: `Notes from the Engineering team at Vernacular.ai`,
     siteImage: ``,
     author: ``,
@@ -15,30 +16,27 @@ module.exports = {
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
-      // See the theme's README for all available options
       options: {
+        feed: true,
+        feedTitle: `Engineering at Vernacular.ai`,
         navigation: [
           {
             title: `Blog`,
             slug: `/blog`,
           },
           {
-            title: `About`,
-            slug: `/about`,
-          },
-          {
             title: `Team`,
             slug: `/team`,
+          },
+          {
+            title: `About`,
+            slug: `/about`,
           },
         ],
         externalLinks: [
           {
             name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
-          },
-          {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            url: `https://twitter.com/vernacularai`,
           },
         ],
       },
@@ -53,9 +51,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        name: `Engineering at Vernacular.ai`,
+        short_name: `Engineering`,
+        description: `Notes from the Engineering team at Vernacular.ai`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
@@ -76,5 +74,6 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
+    // `gatsby-plugin-webpack-bundle-analyser-v2`,
   ],
 };
