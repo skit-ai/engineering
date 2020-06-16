@@ -1,4 +1,5 @@
 {
+  "homepage": "https://vernacular-ai.github.io/eng",
   "private": true,
   "name": "machine-learning",
   "description": "",
@@ -28,6 +29,6 @@
   "devDependencies": {
     "cross-env": "^5.2.0",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.8",
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^3.0.0"
   }
 }

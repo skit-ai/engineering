@@ -3,7 +3,7 @@ require(`dotenv`).config({
 });
 
 module.exports = {
-  pathPrefix: `/ml`,
+  pathPrefix: `/engineering`,
   siteMetadata: {
     siteTitle: `Engineering at Vernacular.ai`,
     siteTitleAlt: `Engineering | Vernacular.ai`,
